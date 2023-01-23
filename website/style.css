@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
+body {
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffeb3b;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+#app {
+  display: grid;
+  /* grid-auto-rows: minmax(150px, auto); */
+  /* grid-template-columns:  */
+  height: 75vh;
+  color: #0b0d0dc2;
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.holder {
+  height: 80px;
+  width: 350px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#zip {
+  text-align: center;
+  border-radius: 35px;
+}
+#generate {
+  border-radius: 35px;
+}
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+  height: 190px;
+  width: 350px;
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 320px;
+  background: #ffeb3b73;
+  color: #70610c;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background: #7e9ab18a;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+}
+button:hover {
+  background-image: radial-gradient(
+    circle,
+    #d0c711a9,
+    #c7c4139f,
+    #bfbf1588,
+    #b4bc1780,
+    #abb81980
+  );
+}
+h1 {
+  font-size: 36px;
+}
+
+textarea {
+  background: #22b2da;
+  border-radius: 35px;
+  border: none;
+  text-align: center;
+  background: #8496b2c9;
+  color: #0e0d07;
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #6e6114;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6e6114;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6e6114;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  input {
+    width: 290px;
+  }
+  textarea {
+    width: 290px;
+  }
+  #entryHolder {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  input {
+    width: 190px;
+  }
+  textarea {
+    width: 190px;
+  }
+  #entryHolder {
+    font-size: 15px;
+  }
+}
